@@ -1,0 +1,275 @@
+.container{/*
+    background-color: lightgreen;
+    border:3px solid green;
+    */
+}
+.items{/*
+    background-color: lightblue;
+    border:3px solid blue;
+    */
+    padding: 12px 20px;
+}
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+body{
+    font-family: 'Inter';
+    background-color: lightblue;
+
+}
+/*________________________________________________*/
+
+section{
+    display: flex;
+    height: 96vh;
+    
+    padding: 10px;
+}
+.container1{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+    #header{display: flex; 
+        height: 85vh;
+        flex-direction: column;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #perfil{
+        background: lightblue;
+        padding-right: 20px;
+        /*box-shadow: 0 0 100px 10px cadetblue;*/
+        transition: all ease 0.3s;
+    }
+
+      #perfil:hover{
+        background: rgb(48, 109, 129);
+        border-radius: 5%;
+        box-shadow: 0 0 100px 10px cadetblue;
+        transition: all ease 0.3s;
+    }
+    .perfil_block{
+        display: flex;
+        align-items: center;
+    }
+
+    #perfil img{
+        width: 35px;
+        border-radius: 50%;
+    }
+    #menu{
+        font-family: Montserrat, sans-serif;
+        padding: 0px 15px;
+    }
+    #container-button{display: flex;
+        justify-content: center;
+    }
+
+.container2{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    min-height: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+}
+button{
+    width: 203px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid darkblue;
+    border-radius: 24px;
+    /* padding: 24px; */
+    margin: 17px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: cornflowerblue;
+}
+#BtnEncriptar:hover{
+    background-color:cornflowerblue ;
+}
+    #BtnEncriptar{background-color: #0A3871;}
+    label{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: darkblue;
+        cursor: pointer
+    }
+.contenedorTexto{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenedorTextarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.contenedorInicial{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+}
+    #imgAlura{
+        width: 100%;
+    }
+textarea{
+    width: 100%;
+    background-color: transparent;
+    /* height: 177px; */
+    padding: 12px 20px;
+    border: none;
+    box-sizing: border-box;
+    /* fuente */
+    font-family: 'Inter';
+    font-size: 22px;
+    color: #0A3871;
+}
+
+h3{
+    
+    width: 100%;
+    font-size: 21px;
+    line-height: 115%;
+    color: #495057;
+}
+
+
+    
+.botones{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  /*ul{
+    backgrond:red;
+  }*/
+
+
+/*alertas
+.info, .correcto, .ojo, .error, .validation {
+
+}
+.cont-popup {
+	color: #000;
+	background: #fff;
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+}*/
+
+#popUP {
+    background: darkgoldenrod;
+	position: fixed;
+    bottom: 10px;
+    right: -140px;
+    border-radius: 5px;
+	height: auto;
+    padding: 10px;
+    border: 1px solid darkblue;
+	z-index: 2000;
+	display: none;
+   
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+    
+}
+
+    .rectangle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        width: 300px;
+        height: 50px;
+
+        color: white;
+        /* opacity: 0; */
+        /* overflow: hidden; */
+    }
+    .material-icons{
+        font-family: 'Material Icons';
+        font-size: 30px;
+    }
+
+    /* Animacion */
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+    @keyframes fadeIn {
+        0% {
+            
+            opacity: 0;
+        }
+        100% {
+            
+            opacity: 1;
+            
+            
+        }
+    }
+
+
+/*
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('imagenes/error.jpg');
+}*/
+
+
+
+
+
+/*_____________________vista tablet______________________________ */
+@media screen and (max-width: 760px){
+    section{
+        flex-direction: column;/*al tener - de 700px cambia de fila a columna */
+    }
+    .container{
+        width: 100%;
+    }
+    #header{
+        height:60vh;
+    }
+    #imgAlura{
+        display: none;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .botones{display: flex;
+        flex-direction: column;
+    }
+}
+    
